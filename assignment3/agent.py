@@ -102,7 +102,7 @@ if __name__ == "__main__":
     parser.add_argument('--last_opponent_move', help='last opponent move')
 
     args = parser.parse_args()
-    if (args.last_opponent_move != 'zero'):
+    if(args.last_opponent_move != 'zero' and args.init == None):
        agent_move(args.last_opponent_move) 
     else:
-       init() 
+       init()
